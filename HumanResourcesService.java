@@ -22,4 +22,11 @@ public interface HumanResourcesService {
 	public Map<LocalDate, List<TimeBooking>> getGroupedTimeBookingsByPersonalNumber(String personalNumber,
 			LocalDate startDate, LocalDate endDate);
 	
+	/**
+	 * Returns the list of personal numbers of the employees assigned to work at the given date
+	 * @param date
+	 * @return list of personalNumbers
+	 */
+	List<String> getWorkingEmployeesByDate(LocalDate date);
+	
 }

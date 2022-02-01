@@ -2,6 +2,7 @@ package com.fantasy.tbs.service.impl;
 
 import java.time.Duration;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -86,4 +87,11 @@ public class HumanResourcesServiceImpl implements HumanResourcesService {
         
 		return bookingsPerDay;
 	}
+
+	@Override
+	public List<String> getWorkingEmployeesByDate(LocalDate date) {
+		// TODO: implement logic
+		return new ArrayList<String>();
+	}
+
 }
